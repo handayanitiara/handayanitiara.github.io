@@ -1,0 +1,218 @@
+<style>
+body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      color: #17a2b8;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: black ;
+      font-family: 'Roboto', sans-serif;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #17a2b8;
+    }
+
+    /* Hero Section */
+    .landing {
+      background: linear-gradient(135deg, #1c7be1 0%, #1c9ce1 100%);
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .landing h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .landing h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      overflow: hidden; /* Ensures text is hidden initially */
+      white-space: nowrap; /* Prevents wrapping */
+      width: 0; /* Set the initial width to 0 */
+      animation: typing 4s steps(30) infinite, deleting 2s steps(30) infinite 4s, blink-caret 0.75s step-end infinite;
+    }
+
+    /* Typing effect animation */
+    @keyframes typing {
+      0% { width: 0; }
+      100% { width: 100%; }
+    }
+
+    /* Deleting effect animation */
+    @keyframes deleting {
+      0%, 100% { width: 100%; }
+      50% { width: 0; }
+    }
+
+    /* Blinking caret effect */
+    @keyframes blink-caret {
+      50% { border-color: transparent; }
+    }
+
+    /* About Section */
+    #about {
+      padding: 60px 0;
+      background: #fff;
+    }
+
+    .skills p {
+      font-weight: bold;
+    }
+
+    .progress-bar {
+      background: linear-gradient(90deg, #17a2b8, #1c7be1);
+    }
+
+    /* Portfolio Section */
+    #portfolio {
+      padding: 60px 0;
+      background: linear-gradient(to bottom, #1c7be1, #1c9ce1);
+      color: #fff;
+    }
+
+    .portfolio h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .box img {
+      border-radius: 10px;
+      margin-bottom: 15px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 60px 0;
+      background: #17a2b8;
+      color: #fff;
+    }
+
+    .input_form input,
+    .input_form textarea {
+      border-radius: 10px;
+      padding: 10px;
+      border: 2px solid #fff;
+      background: transparent;
+      color: #fff;
+    }
+
+    .input_form input:focus,
+    .input_form textarea:focus {
+      border-color: #1c9ce1;
+      outline: none;
+    }
+
+    .btn-custom {
+      background: #1c7be1;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #1c9ce1;
+    }
+
+    #about .img-fluid {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    #about .img-fluid:hover {
+      transform: scale(1.05);
+    }
+
+    /* Gaya Teks dan Progress Bar */
+    #about h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      color: #1c7be1;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #about .skills p {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .progress {
+      background-color: #e9ecef;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      background-color: #1c7be1;
+      border-radius: 10px;
+    }
+
+    #portfolio h2 {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center; /* Menempatkan teks di tengah */
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px; /* Space between icons */
+      margin-top: 20px;
+    }
+
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      object-fit: cover; /* Ensure the image fits within the square */
+      border-radius: 10px; /* Optional: Add rounded corners */
+      transition: transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+  </style>
